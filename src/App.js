@@ -74,20 +74,11 @@ class App extends Component {
       );
       style.backgroundColor = 'red'
     }
-        // {/* <person name={this.state.person[0].name} age={this.state.person[0].age}/>
-        // <person name={this.state.person[1].name} age={this.state.person[1].age} click={this.switchnamehandler.bind(this, 'max')} 
-        // changed={this.namechangehandler}/>
-        // <person name={this.state.person[2].name} age={this.state.person[2].age}/>
-        // <person name="rahil" age="27" 
-        // click={this.switchnamehandler.bind(this, 'max')} 
-        // changed={this.namechangehandler}>my hobbies: racing</person>
-        // <person name="sam" age="28" /> */}
-    //     </div>
-    //   );
-    // }
+    let classes = ['red', 'bold'].join(' ');
     return ( 
       <div className="App">
         <h1>Hi, I'm a React App</h1>
+        <p className={classes}> This is really working </p>
         <button 
           style={style}
           onClick = {this.togglePersonsHandler}>Toggle Person</button>
