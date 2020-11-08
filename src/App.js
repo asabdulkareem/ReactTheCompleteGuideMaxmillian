@@ -50,7 +50,8 @@ class App extends Component {
   // }
   render(){  
     const style = {
-      backgroundColor: 'white',
+      backgroundColor: 'green',
+      color: 'white',
       font: 'inherit',
       border: '1x solid blue',
       padding: '8px',
@@ -71,6 +72,7 @@ class App extends Component {
           })}
         </div>
       );
+      style.backgroundColor = 'red'
     }
         // {/* <person name={this.state.person[0].name} age={this.state.person[0].age}/>
         // <person name={this.state.person[1].name} age={this.state.person[1].age} click={this.switchnamehandler.bind(this, 'max')} 
